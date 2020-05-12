@@ -1,0 +1,4 @@
+# Referenced at /Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:36
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:36
+-keep class androidx.multidex.MultiDexApplication { <init>(); }

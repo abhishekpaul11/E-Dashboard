@@ -1,0 +1,174 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.currentplacedetailsonmap"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:6:5-74
+12-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:6:22-71
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:7:5-68
+13-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:7:22-65
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:41:5-81
+14-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:41:22-78
+15
+16    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:25:5-79
+18-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:25:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:26:5-67
+19-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:26:22-64
+20
+21    <uses-feature
+21-->[com.google.android.gms:play-services-maps:17.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/7bcf804a339ceb9c6955f16dcce483b3/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+22        android:glEsVersion="0x00020000"
+22-->[com.google.android.gms:play-services-maps:17.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/7bcf804a339ceb9c6955f16dcce483b3/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+23        android:required="true" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/7bcf804a339ceb9c6955f16dcce483b3/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+24
+25    <uses-permission android:name="android.permission.CAMERA" />
+25-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:9:5-65
+25-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:9:22-62
+26    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+26-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:11:5-71
+26-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:11:22-68
+27    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+27-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:12:5-80
+27-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:12:22-77
+28    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+28-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:14:5-75
+28-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:14:22-72
+29    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+29-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:15:5-75
+29-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:15:22-72
+30
+31    <uses-feature android:name="android.hardware.camera" />
+31-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:17:5-60
+31-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:17:19-57
+32    <uses-feature
+32-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:18:5-20:36
+33        android:name="android.hardware.camera.autofocus"
+33-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:19:9-57
+34        android:required="false" />
+34-->[com.opentok.android:opentok-android-sdk:2.16.3] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/ab8dc0425dee824d30bef811cfe4db16/opentok-android-sdk-2.16.3/AndroidManifest.xml:20:9-33
+35
+36    <application
+36-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:9:5-40:19
+37        android:name="androidx.multidex.MultiDexApplication"
+38        android:allowBackup="true"
+38-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:10:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.0.1] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/d856a2ad07d784cae061be131eb0ba9a/core-1.0.1/AndroidManifest.xml:22:18-86
+40        android:debuggable="true"
+41        android:icon="@drawable/icon"
+41-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:11:9-38
+42        android:label="@string/app_name"
+42-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:12:9-41
+43        android:screenOrientation="landscape"
+43-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:13:9-46
+44        android:supportsRtl="true"
+44-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:14:9-35
+45        android:theme="@style/AppTheme" >
+45-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:15:9-40
+46        <uses-library
+46-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:17:9-88
+47            android:name="org.apache.http.legacy"
+47-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:17:23-60
+48            android:required="false" />
+48-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:17:61-85
+49
+50        <meta-data
+50-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:19:9-21:69
+51            android:name="com.google.android.gms.version"
+51-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:20:13-58
+52            android:value="@integer/google_play_services_version" />
+52-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:21:13-66
+53<!--              The API key for Google Maps-based APIs. -->
+54        <meta-data
+54-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:25:9-27:55
+55            android:name="com.google.android.geo.API_KEY"
+55-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:26:13-58
+56            android:value="@string/google_maps_key" />
+56-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:27:13-52
+57
+58        <activity
+58-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:29:9-39:20
+59            android:name="com.example.currentplacedetailsonmap.MapsActivityCurrentPlace"
+59-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:30:13-89
+60            android:label="@string/title_activity_maps"
+60-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:31:13-56
+61            android:screenOrientation="landscape" >
+61-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:32:13-50
+62            <intent-filter>
+62-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:34:13-38:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:35:17-69
+63-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:35:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:37:17-77
+65-->/Users/abhishekpaul/Desktop/Android/android-samples-master/tutorials/CurrentPlaceDetailsOnMap/app/src/main/AndroidManifest.xml:37:27-74
+66            </intent-filter>
+67        </activity>
+68
+69        <service
+69-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:29:9-35:19
+70            android:name="com.google.firebase.components.ComponentDiscoveryService"
+70-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:30:13-84
+71            android:directBootAware="true"
+71-->[com.google.firebase:firebase-common:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/97ba2a7fe940ab4ba486aab773eee2fc/firebase-common-19.1.0/AndroidManifest.xml:14:13-43
+72            android:exported="false" >
+72-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:31:13-37
+73            <meta-data
+73-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:32:13-34:85
+74                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+74-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:33:17-109
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-database:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/17cec60889de556f1129da6a81ba7b86/firebase-database-19.1.0/AndroidManifest.xml:34:17-82
+76        </service>
+77
+78        <activity
+78-->[pub.devrel:easypermissions:3.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/5e92d8893b677619d81948d64bba2cd8/easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
+79            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+79-->[pub.devrel:easypermissions:3.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/5e92d8893b677619d81948d64bba2cd8/easypermissions-3.0.0/AndroidManifest.xml:13:13-86
+80            android:exported="false"
+80-->[pub.devrel:easypermissions:3.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/5e92d8893b677619d81948d64bba2cd8/easypermissions-3.0.0/AndroidManifest.xml:14:13-37
+81            android:label=""
+81-->[pub.devrel:easypermissions:3.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/5e92d8893b677619d81948d64bba2cd8/easypermissions-3.0.0/AndroidManifest.xml:15:13-29
+82            android:theme="@style/EasyPermissions.Transparent" />
+82-->[pub.devrel:easypermissions:3.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/5e92d8893b677619d81948d64bba2cd8/easypermissions-3.0.0/AndroidManifest.xml:16:13-63
+83        <activity
+83-->[com.google.android.gms:play-services-base:17.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/c423a4a4c865f1495e65a77f87be0907/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+84            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+84-->[com.google.android.gms:play-services-base:17.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/c423a4a4c865f1495e65a77f87be0907/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+85            android:exported="false"
+85-->[com.google.android.gms:play-services-base:17.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/c423a4a4c865f1495e65a77f87be0907/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+86-->[com.google.android.gms:play-services-base:17.0.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/c423a4a4c865f1495e65a77f87be0907/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+87
+88        <provider
+88-->[com.google.firebase:firebase-common:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/97ba2a7fe940ab4ba486aab773eee2fc/firebase-common-19.1.0/AndroidManifest.xml:17:9-21:39
+89            android:name="com.google.firebase.provider.FirebaseInitProvider"
+89-->[com.google.firebase:firebase-common:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/97ba2a7fe940ab4ba486aab773eee2fc/firebase-common-19.1.0/AndroidManifest.xml:18:13-77
+90            android:authorities="com.example.currentplacedetailsonmap.firebaseinitprovider"
+90-->[com.google.firebase:firebase-common:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/97ba2a7fe940ab4ba486aab773eee2fc/firebase-common-19.1.0/AndroidManifest.xml:19:13-72
+91            android:exported="false"
+91-->[com.google.firebase:firebase-common:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/97ba2a7fe940ab4ba486aab773eee2fc/firebase-common-19.1.0/AndroidManifest.xml:20:13-37
+92            android:initOrder="100" />
+92-->[com.google.firebase:firebase-common:19.1.0] /Users/abhishekpaul/.gradle/caches/transforms-2/files-2.1/97ba2a7fe940ab4ba486aab773eee2fc/firebase-common-19.1.0/AndroidManifest.xml:21:13-36
+93    </application>
+94
+95</manifest>

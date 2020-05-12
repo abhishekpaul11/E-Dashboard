@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.example.currentplacedetailsonmap"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true //Add this
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //exclude group: 'com.android.support', module: 'support-annotations'
+    //})
+    //implementation 'com.android.support:appcompat-v7:28.0.0'
+    //implementation 'com.android.support:support-compat:28.0.0'
+    //implementation 'com.android.support:multidex:1.0.3'
+    //implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.github.thuat26:CustomGaugeView:1.0'
+    //implementation 'com.jjoe64:graphview:4.2.2'
+    implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.opentok.android:opentok-android-sdk:2.16.3'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+}
